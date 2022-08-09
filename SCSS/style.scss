@@ -1,5 +1,85 @@
-* {
-    margin: 0;
-    padding: 0;
+$mainColor: #4B321D;
+
+
+.container {
+    width: 1440px;
+    background: #F1F1EB;
+   
+    margin-left: auto;
+    margin-right: auto; 
+    
+    .container__size {
+        width: 1320px;
+        align-items: center;
+        margin-right: 60px;
+        margin-left: 60px;
+    }
 }
 
+
+
+.header {
+    display: flex;
+    height: 48px;
+    align-items: center;
+
+    .aloha {
+        display: flex;
+        height: 41px;
+        width: 110px;
+        justify-content: start;
+        flex: 2;
+    }
+
+    .aloha__menu {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex: 2;
+        color: $mainColor;
+
+        .projects {
+            padding-right: 36px;
+        }
+
+        .about {
+            padding-right: 36px;
+
+        }
+        .blog {
+            padding-right: 36px;
+        }
+
+    }
+}
+
+
+.text {
+    font-size: 80px;
+    margin-top: 126px;
+    margin-bottom: 136px;
+    color: $mainColor;
+    line-height: 100px;
+    display: flex;
+    align-items: center;
+    width: 1260px;
+}
+
+.picture {
+    width: 1400px;
+    height: 928px;
+    margin-right: 60px;
+    margin-left: -40px;
+    padding-bottom: 90px;
+}
+
+.my__work {
+    font-size: 80px;
+    margin-top: 126px;
+    margin-bottom: 136px;
+    color: $mainColor;
+    line-height: 100px;
+    display: flex;
+    align-items: center;
+    width: 1260px;
+}

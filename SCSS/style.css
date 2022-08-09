@@ -1,4 +1,71 @@
-* {
-  margin: 0;
-  padding: 0;
+.container {
+  width: 1440px;
+  background: #F1F1EB;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .container__size {
+  width: 1320px;
+  align-items: center;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+.header {
+  display: flex;
+  height: 48px;
+  align-items: center;
+}
+.header .aloha {
+  display: flex;
+  height: 41px;
+  width: 110px;
+  justify-content: start;
+  flex: 2;
+}
+.header .aloha__menu {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex: 2;
+  color: #4B321D;
+}
+.header .aloha__menu .projects {
+  padding-right: 36px;
+}
+.header .aloha__menu .about {
+  padding-right: 36px;
+}
+.header .aloha__menu .blog {
+  padding-right: 36px;
+}
+
+.text {
+  font-size: 80px;
+  margin-top: 126px;
+  margin-bottom: 136px;
+  color: #4B321D;
+  line-height: 100px;
+  display: flex;
+  align-items: center;
+  width: 1260px;
+}
+
+.picture {
+  width: 1400px;
+  height: 928px;
+  margin-right: 60px;
+  margin-left: -40px;
+  padding-bottom: 90px;
+}
+
+.my__work {
+  font-size: 80px;
+  margin-top: 126px;
+  margin-bottom: 136px;
+  color: #4B321D;
+  line-height: 100px;
+  display: flex;
+  align-items: center;
+  width: 1260px;
 }/*# sourceMappingURL=style.css.map */
