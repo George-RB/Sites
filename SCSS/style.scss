@@ -1,9 +1,39 @@
 $mainColor: #4B321D;
 
 
+@mixin button__ {
+    width: 162px;
+    height: 50px;
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid $mainColor;
+    align-items: center;
+    border-radius: 2px;
+}
+
+@mixin hover__ {
+    background: $mainColor ;
+    opacity: 0.9;
+    cursor: pointer;
+    color: #000;
+}
+
+@mixin links__ {
+    cursor: pointer;
+    color: #000;
+    text-decoration: underline ;
+}
+
+
+
+
+
 .container {
     width: 1440px;
     background: #F1F1EB;
+    color: $mainColor;
+
    
     margin-left: auto;
     margin-right: auto; 
@@ -13,6 +43,7 @@ $mainColor: #4B321D;
         align-items: center;
         margin-right: 60px;
         margin-left: 60px;
+        padding-top: 40px;
     }
 }
 
@@ -38,16 +69,12 @@ $mainColor: #4B321D;
         flex: 2;
         color: $mainColor;
 
-        .projects {
+        .aloha__menu__link {
             padding-right: 36px;
         }
 
-        .about {
-            padding-right: 36px;
-
-        }
-        .blog {
-            padding-right: 36px;
+        .aloha__menu__link:hover {
+            @include links__;
         }
 
     }
@@ -74,12 +101,191 @@ $mainColor: #4B321D;
 }
 
 .my__work {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.work__text {
     font-size: 80px;
-    margin-top: 126px;
-    margin-bottom: 136px;
+    margin-top: 84px;
+    margin-bottom: 56px;
     color: $mainColor;
     line-height: 100px;
     display: flex;
     align-items: center;
     width: 1260px;
+}
+
+.work__btn {
+    @include button__;
+}
+
+.work__btn:hover {
+    @include hover__;
+}
+
+.block {
+    margin-top: 90px;
+    display: flex;
+    height: 885.59375px;
+    width: 1320px;
+
+    .block__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 100px;
+        font-size: 38px;
+        line-height: 44px;
+
+        .block__txt {
+            padding-bottom: 45px;
+        }
+    }
+
+    .block__btn {
+        @include button__;
+    }
+
+    .block__btn:hover {
+        @include hover__;
+    }
+}
+
+
+.block__1 {
+    margin-top: 90px;
+    display: flex;
+    height: 885.59375px;
+    width: 1320px;
+
+    .block__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 100px;
+        font-size: 38px;
+        line-height: 44px;
+
+        .block__txt {
+            padding-bottom: 45px;
+        }
+    }
+
+    .block__btn {
+        @include button__;
+    }
+
+    .block__btn:hover {
+        @include hover__;
+    }
+
+    .block__img {
+
+    }
+}
+
+.text__1 {
+    background: #4B321D;
+    border-radius: 16px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    color: #000;
+    height: 476px;
+
+    .text__1__ {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding-left: 60px;
+        padding-top: 84px;
+
+
+        .text__1__title {
+            font-size: 80px;
+            line-height: 100px;
+            color: #F1F1EB;
+        }
+
+        .text__1__txt {
+            font-size: 26px;
+            line-height: 36px;
+            color: #F1F1EB;
+            padding-top: 45px;
+        }
+    }
+}
+
+
+.text__2 {
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding-top: 84px;
+
+    .text__2__txt {
+        font-size: 80px;
+        line-height: 100px;
+        color: $mainColor;
+        padding-bottom: 56px;
+    }
+
+    .text__2__btn {
+        @include button__;
+    }
+
+    .text__2__btn:hover {
+        @include hover__;
+    }
+}
+
+.footer {
+    width: 1440px;
+    height: 396px;
+
+    .footer__block {
+        width: 1320px;
+        height: 196px;
+        display: flex;
+        padding-top: 96px;
+        align-items: center;
+    }
+}
+
+.footer__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+
+    .f_text__social {
+        padding-bottom: 4px;
+    }
+
+    .f_text__img {
+        padding-top: 79px;
+    }
+}
+
+.footer__contacts {
+    display: flex;
+    justify-content: end;
+    flex: 2;
+
+    .f_link {
+        padding-left: 178px;
+        padding-right: 178px;
+    }
+
+    .link__ {
+        padding-bottom: 4px;
+    }
+
+    .link__:hover {
+        @include links__;
+    }
+
 }
